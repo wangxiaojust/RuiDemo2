@@ -72,6 +72,8 @@ public class MyActivity extends Activity {
                     showMessage("登录失败，请检查用户名或密码");
                 }else{
                     showMessage("登录成功");
+                    startActivity(new Intent(MyActivity.this,MainActivity.class));
+
                 }
                 db.CloseDB();
 

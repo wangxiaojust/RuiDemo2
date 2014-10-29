@@ -2,8 +2,9 @@
 <resources>
 
     <string name="app_name">My Application</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">欢迎来到瑞茂通!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

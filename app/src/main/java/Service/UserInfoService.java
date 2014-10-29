@@ -50,7 +50,19 @@ public class UserInfoService {
         return userInfo;
     }
 
+    //检查用户名是否存在
 
+    public UserInfo queryByUser(String user){
+
+        UserInfo userInfo = null;
+        Cursor cursor = db.rawQuery("select * from USERINFO where LOGIN_ID = ?",new String[]{user});
+        while (cursor.moveToNext()){
+            userInfo = new UserInfo(cursor.getString(0),cursor.getString(1),cursor.getString(2));
+        }
+
+        cursor.close();
+        return userInfo;
+    }
 
 }
 
